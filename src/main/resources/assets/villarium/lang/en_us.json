@@ -1,0 +1,13 @@
+{
+  "itemGroup.villarium": "Example Mod Tab",
+  "block.villarium.example_block": "Example Block",
+  "item.villarium.example_item": "Example Item",
+
+  "villarium.configuration.title": "Villarium Configs",
+  "villarium.configuration.section.villarium.common.toml": "Villarium Configs",
+  "villarium.configuration.section.villarium.common.toml.title": "Villarium Configs",
+  "villarium.configuration.items": "Item List",
+  "villarium.configuration.logDirtBlock": "Log Dirt Block",
+  "villarium.configuration.magicNumberIntroduction": "Magic Number Text",
+  "villarium.configuration.magicNumber": "Magic Number"
+}
