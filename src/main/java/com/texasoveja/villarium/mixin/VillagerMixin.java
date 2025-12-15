@@ -130,13 +130,13 @@ public abstract class VillagerMixin extends AbstractVillager implements IVillage
         // Weaponsmith
         if (prof == VillagerProfession.WEAPONSMITH) {
             if (level >= 3 && blocks.contains(Blocks.GRINDSTONE))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 5), new ItemStack(Items.IRON_INGOT, 1), createEnchantedItem(Items.IRON_SWORD, Enchantments.SHARPNESS, 1)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 5), new ItemStack(Items.IRON_INGOT, 1), createEnchantedItem(Items.IRON_SWORD, Enchantments.SHARPNESS, 2)));
 
             if (level >= 4 && blocks.contains(Blocks.ANVIL))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 7), new ItemStack(Items.IRON_INGOT, 1), createEnchantedItem(Items.IRON_AXE, Enchantments.EFFICIENCY, 2)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 7), new ItemStack(Items.IRON_INGOT, 1), createEnchantedItem(Items.IRON_AXE, Enchantments.EFFICIENCY, 3)));
 
             if (level >= 5 && blocks.contains(Blocks.SMITHING_TABLE))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 18), new ItemStack(Items.DIAMOND, 1), createEnchantedItem(Items.DIAMOND_SWORD, Enchantments.UNBREAKING, 2)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.NAUTILUS_SHELL, 1), new ItemStack(Items.DIAMOND, 5), new ItemStack(Items.TRIDENT, 1)));
         }
 
         // Armorer
@@ -148,7 +148,7 @@ public abstract class VillagerMixin extends AbstractVillager implements IVillage
                 validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 6), ItemStack.EMPTY, createEnchantedItem(Items.IRON_BOOTS, Enchantments.FEATHER_FALLING, 2)));
 
             if (level >= 5 && blocks.contains(Blocks.FURNACE))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 20), new ItemStack(Items.DIAMOND, 1), createEnchantedItem(Items.DIAMOND_LEGGINGS, Enchantments.PROTECTION, 2)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 20), ItemStack.EMPTY, new ItemStack(Items.TURTLE_HELMET, 1)));
         }
 
         // Toolsmith
@@ -157,10 +157,10 @@ public abstract class VillagerMixin extends AbstractVillager implements IVillage
                 validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 6), new ItemStack(Items.IRON_PICKAXE, 1), createEnchantedItem(Items.IRON_PICKAXE, Enchantments.EFFICIENCY, 1)));
 
             if (level >= 4 && blocks.contains(Blocks.GRINDSTONE))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 5), ItemStack.EMPTY, createEnchantedItem(Items.IRON_SHOVEL, Enchantments.EFFICIENCY, 2)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 5), ItemStack.EMPTY, createEnchantedItem(Items.IRON_SHOVEL, Enchantments.EFFICIENCY, 3)));
 
             if (level >= 5 && blocks.contains(Blocks.ANVIL))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 22), new ItemStack(Items.DIAMOND, 1), createEnchantedItem(Items.DIAMOND_PICKAXE, Enchantments.UNBREAKING, 2)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 30), ItemStack.EMPTY, createEnchantedItem(Items.DIAMOND_PICKAXE, Enchantments.SILK_TOUCH, 1)));
         }
 
         // Fletcher
@@ -172,7 +172,7 @@ public abstract class VillagerMixin extends AbstractVillager implements IVillage
                 validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 6), ItemStack.EMPTY, createEnchantedItem(Items.BOW, Enchantments.POWER, 1)));
 
             if (level >= 5 && blocks.contains(Blocks.HAY_BLOCK))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 9), ItemStack.EMPTY, createEnchantedItem(Items.CROSSBOW, Enchantments.QUICK_CHARGE, 1)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 10), new ItemStack(Items.BREEZE_ROD, 1), new ItemStack(Items.WIND_CHARGE, 8)));
         }
 
         // Farmer
@@ -190,10 +190,10 @@ public abstract class VillagerMixin extends AbstractVillager implements IVillage
         // Librarian
         else if (prof == VillagerProfession.LIBRARIAN) {
             if (level >= 3 && blocks.contains(Blocks.LECTERN))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 7), new ItemStack(Items.BOOK, 1), createEnchantedBook(Enchantments.UNBREAKING, 1)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 7), new ItemStack(Items.BOOK, 1), createEnchantedBook(Enchantments.UNBREAKING, 2)));
 
             if (level >= 4 && blocks.contains(Blocks.ENCHANTING_TABLE))
-                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 12), new ItemStack(Items.BOOK, 1), createEnchantedBook(Enchantments.EFFICIENCY, 2)));
+                validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 12), new ItemStack(Items.BOOK, 1), createEnchantedBook(Enchantments.SILK_TOUCH, 1)));
 
             if (level >= 5 && blocks.contains(Blocks.BOOKSHELF))
                 validSpecialOffers.add(createSpecial(new ItemStack(Items.EMERALD, 24), new ItemStack(Items.BOOK, 1), createEnchantedBook(Enchantments.MENDING, 1)));
